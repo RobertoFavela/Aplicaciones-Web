@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mini blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #fbfbfd;
+            color: #465b81;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        main {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f5;
+            margin-left: 20px;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        h1, h2 {
+            color: #272729;
+            margin-bottom: 15px;
+        }
+
+        #main-header {
+            text-align: center;
+        }
+        #main-header img {
+            display: block;
+            margin: 0 auto;
+        }
+        #main-header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        #main-header nav ul li {
+            display: inline;
+            margin: 10px 10px;
+        }
+
+        #about {
+            text-align: center;
+            margin: 0 auto;
+            width: 80%;
+        }
+        #about h2 {
+            text-align: center;
+        }
+        #about p {
+            text-align: justify;
+            margin: 0 20px;
+        }
+        #about input {
+            display: block;
+            margin: 20px auto;
+        }
+        #about ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        #about ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        #about ul li a {
+            text-decoration: none;
+        }
+        #about ul li img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        #contact {
+            text-align: center;
+        }
+
+        .song-of-the-day {
+            text-align: center;
+        }
+        .song-of-the-day ul {
+            list-style: none;
+            padding: 0;
+        }
+        .song-of-the-day ul li {
+            margin-bottom: 10px;
+        }
+        .song-of-the-day ul li img {
+            width: 150px;
+            height: 150px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="https://favelaroberto.wordpress.com/wp-content/uploads/2023/01/image.png"
+            style="width:260px;height:320px">
+        <h1>Bienvenidos a mi blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <main>
+            <section id="about">
+                <h2>Sobre mi</h2>
+                <ul>
+                    <li><a href="https://github.com/RobertoFavela"><img
+                                src="https://pngimg.com/uploads/github/github_PNG80.png" alt="GitHub"> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/roberto-favela-991246161/"><img
+                                src="https://th.bing.com/th/id/OIP.sRj8gQnEyHhNJcBNFHZoLAHaHa?rs=1&pid=ImgDetMain"
+                                alt="LinkedIn"> LinkedIn</a></li>
+                    <li><a href="https://favelaroberto.wordpress.com/"><img
+                                src="https://pngimg.com/uploads/wordpress/wordpress_PNG47.png" alt="Página personal"> Página
+                            personal</a></li>
+                    <li><a href="https://www.instagram.com/mex_tasis/"><img
+                                src="https://th.bing.com/th/id/OIP.xa0FgRBsvMi7bmVNCDYsCgHaHa?rs=1&pid=ImgDetMain"
+                                alt="Mi banda de rock"> Mi banda de rock</a></li>
+                </ul>
+                <p>Soy Roberto Favela, egresado de CBTIs 37 como laboratorista clínico y actualmente cursando el cuarto
+                    semestre de la carrera de Ingeniería en software en ITSON.</p>
+                <p>Después de toda una vida de estar obsesionado con las computadoras y toda la tecnología en general,
+                    abandoné el camino del área de la salud, buscando esa pasión que me faltaba y que encontré en el mundo
+                    del software.</p>
+                <p>Actualmente miembro activo como bajista y tecladista en la banda Mextasis</p>
+                <input type="text" name="usuario" placeholder="Escribe algo">
+            </section>
+
+            <section id="contact">
+                <h2>Contacto</h2>
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Tú nombre">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Tu correo">
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <aside>
+            <section class="song-of-the-day">
+                <h2>Mi canción del día</h2>
+                <ul>
+                    <li>
+                        <span>08/10/2024</span> - <span>Animosity</span>
+                        <br>
+                        <a href="https://open.spotify.com/intl-es/track/7LhKM29qgywgWqypqUOaob?si=ffad14c9f4174886"> Spotify</a>
+                        <br>
+                        <img src="https://i.scdn.co/image/ab67616d00001e022dc9d2a001627474dd17b8bb" alt="Disco">
+                    </li>
+                    <li>
+                        <span>07/10/2024</span> - <span>Cambiando la piel</span>
+                        <br>
+                        <a href="https://open.spotify.com/intl-es/track/2y2iEADc8O0Vv5IKHSs21i?si=0ee1fd4e7b294959"> Spotify</a>
+                        <br>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02cdb97c1de867f1b7ae0dc443" alt="Disco">
+                    </li>
+                    <li>
+                        <span>06/10/2024</span> - <span>San Lucas</span>
+                        <br>
+                        <a href="https://open.spotify.com/intl-es/track/75UMtPC77vqKRwfSuYuNPO?si=a75193cd4d794fce"> Spotify</a>
+                        <br>
+                        <img src="https://i.scdn.co/image/ab67616d00001e023e4b5368bf7ad20f19cc4812" alt="Disco">
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
+
+
